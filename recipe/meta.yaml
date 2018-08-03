@@ -51,7 +51,7 @@ about:
     It is developed based on the 'Fortran' program of Lawson and Hanson (1974, 1995),
     which is public domain and available at <http
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}\/lib\/R\/share\/licenses\/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
   license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 extra:
    recipe-maintainers:
