@@ -1,4 +1,4 @@
-{% set version = '1.2-0' %}
+{% set version = "1.2-0.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,11 +13,11 @@ source:
     - https://cran.r-project.org/src/contrib/lsei_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lsei/lsei_{{ version }}.tar.gz
 
-  sha256: 4781ebd9ef93880260d5d5f23066580ac06061e95c1048fb25e4e838963380f6
+  sha256: 07d573fb3d785920084274288a83a31f77ea63d07776ee70a1d3a73ec66a7fe7
 
 build:
-  merge_build_host: True  # [win]
-  number: 1005
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [win32]
 
   rpaths:
@@ -45,15 +45,12 @@ test:
 about:
   home: https://cran.r-project.org/web/packages/lsei/index.html
   license: GPL (>= 2)
-  summary: It contains functions that solve least squares linear regression problems under linear
-    equality/inequality constraints. Functions for solving quadratic programming problems
-    are also available, which transform such problems into least squares ones first.
-    It is developed based on the 'Fortran' program of Lawson and Hanson (1974, 1995),
-    which is public domain and available at <http
+  summary: It contains functions that solve least squares linear regression problems under linear equality/inequality constraints. Functions for solving quadratic programming problems are also available, which transform such problems into least squares ones first. It is developed based on the 'Fortran' program of Lawson
+    and Hanson (1974, 1995), which is public domain and available at <http
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 extra:
-   recipe-maintainers:
+  recipe-maintainers:
     - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
