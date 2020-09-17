@@ -3,7 +3,7 @@ About r-lsei
 
 Home: https://cran.r-project.org/web/packages/lsei/index.html
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD-3-Clause
 
