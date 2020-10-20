@@ -1,7 +1,7 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '7'
+- '9'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -11,7 +11,7 @@ docker_image:
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '7'
+- '9'
 pin_run_as_build:
   r-base:
     min_pin: x.x
@@ -20,3 +20,6 @@ r_base:
 - '3.6'
 target_platform:
 - linux-64
+zip_keys:
+- - c_compiler_version
+  - fortran_compiler_version
