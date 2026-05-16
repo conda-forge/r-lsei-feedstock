@@ -1,4 +1,4 @@
-{% set version = "1.3-0" %}
+{% set version = "1.3-1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/lsei_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lsei/lsei_{{ version }}.tar.gz
-  sha256: 6289058f652989ca8a5ad6fa324ce1762cc9e36c42559c00929b70f762066ab6
+  sha256: 120bacda08586cbf9696e5c93367b932287491dd06bd0f76b3cc84740967296f
 
 build:
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,8 +45,8 @@ test:
 about:
   home: https://cran.r-project.org/web/packages/lsei/index.html
   license: GPL-2.0-or-later
-  summary: It contains functions that solve least squares linear regression problems under linear equality/inequality constraints. Functions for solving quadratic programming problems are also available, which transform such problems into least squares ones first. It is developed based on the 'Fortran' program of Lawson
-    and Hanson (1974, 1995), which is public domain and available at <http
+  summary: It contains functions that solve least squares linear regression problems under linear equality/inequality constraints. Functions for solving quadratic programming problems are also available, which transform such problems into least squares ones first. It is developed based on the 'Fortran' program of 
+    Lawson and Hanson (1974, 1995), which is public domain and available at <http
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
